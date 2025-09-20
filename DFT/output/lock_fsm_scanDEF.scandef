@@ -1,0 +1,20 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN lock ;
+
+SCANCHAINS 1 ;
+  - top_chain_seg1_clock_rising 
+    + PARTITION p_clock_rising 
+      MAXBITS 3
+    + START PIN scan_in
+    + FLOATING 
+       state_reg[0] ( IN SD ) ( OUT Q ) 
+       state_reg[1] ( IN SD ) ( OUT Q ) 
+       state_reg[2] ( IN SD ) ( OUT Q ) 
+    + STOP PIN scan_out
+;
+
+END SCANCHAINS 
+END DESIGN 
