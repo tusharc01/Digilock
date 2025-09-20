@@ -8,7 +8,7 @@ This repository contains the design and implementation of a Combination Lock usi
 The project presents a combination lock FSM with states such as S_reset, S_open, S_error, and transitions based on inputs/outputs.
 
 <p align="center">
-  <img src="https://github.com/tusharc01/Combinational_lock/blob/main/lock.png" alt="FSM State Diagram" width="500"/>
+  <img src="https://github.com/tusharc01/Digilock/blob/main/lock_fsm.png" alt="FSM State Diagram" width="500"/>
 </p>
 
 
