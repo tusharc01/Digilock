@@ -1,5 +1,5 @@
-# Digilock
-ASIC
+# ASIC
+
 
 ## *Overview*
 This repository contains the design and implementation of a Combination Lock using a Finite State Machine (FSM) in Verilog, as part of the ASIC design flow. The lock handles input sequences for unlocking, with error detection and reset functionality.
