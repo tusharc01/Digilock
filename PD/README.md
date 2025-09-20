@@ -98,5 +98,5 @@ __9. Physical Design:__ Implement the layout of the synthesized netlist using Ca
     - **Congestion and DRC Handling**: Set moderate search/repair iterations to resolve overflows; targets low congestion (<10%) to prevent reruns, based on initial global routing estimates for efficient resource allocation.
 
 
-To be Continued...
+*To be continued...*
 
