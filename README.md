@@ -43,7 +43,7 @@ __5. Logic Synthesis:__ Convert RTL to gate-level netlist using Cadence Genus to
    - Performed elaboration of RTL design to generate an initial unstandard schematic.  
    - Applied synthesize command to translate logic using standard gates, incorporating delays based on constraints, visible in the Genus GUI schematic.  
    - Generated the netlist in Verilog format directly from Genus.  
-   - Constraints include: time unit definition, clock creation, clock uncertainty, input delays, output delays, driving cells, load capacitance, operating conditions. [Constraint File](https://github.com/tusharc01/Combinational_lock/blob/main/Synthesis/with_Constraints/lock_sdc.sdc)
+   - Constraints include: time unit definition, clock creation, clock uncertainty, input delays, output delays, driving cells, load capacitance, operating conditions. [Constraint File](https://github.com/tusharc01/Digilock/blob/main/logic_synthesis/input/lock_const.sdc)
 
 __6. Gate Level Simulation (GLS):__ Lorem
 
