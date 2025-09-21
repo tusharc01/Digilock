@@ -33,9 +33,9 @@ __3. Functional Verification:__ Simulate the RTL code using Cadence tools to ver
      - Access via irun: irun is a command-line utility for streamlined, single-step simulation invocation (compiling, elaborating, and running in one go). You can run it with options like -gui to open a graphical interface, which often includes or leads to SimVision for waveform viewing and debugging (e.g., irun -gui your_design.v would simulate and allow waveform inspection in SimVision).  
    - Performed linting to check for errors and warnings, generating a log file (e.g., hal.log) for analysis. Errors were corrected based on identified issues to ensure clean, robust code.
 
-__4. Code Coverage:__ Analyze testbench effectiveness using the IMC (Incisive Metrics Center) tool to measure how thoroughly simulations exercise the RTL code. *Done.*  
-   - Evaluated metrics such as statement coverage, branch coverage, toggle coverage, and condition coverage.  
-   - Identified uncovered code sections and refined the testbench to achieve higher coverage percentages, ensuring comprehensive verification.
+__4. Code Coverage:__ Testbench effectiveness can be analyze using the IMC (Incisive Metrics Center) tool to measure how thoroughly simulations exercise the RTL code.  
+   - Evaluate metrics such as statement coverage, branch coverage, toggle coverage, and condition coverage.  
+   - Identify uncovered code sections and refined the testbench to achieve higher coverage percentages, ensuring comprehensive verification.
 
 
 __5. Logic Synthesis:__ Convert RTL to gate-level netlist using Cadence Genus tool, viewed in GUI. *Done.*  
