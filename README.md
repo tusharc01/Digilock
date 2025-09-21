@@ -45,7 +45,7 @@ __5. Logic Synthesis:__ Convert RTL to gate-level netlist using Cadence Genus to
    - Generated the netlist in Verilog format directly from Genus.  
    - Constraints include: time unit definition, clock creation, clock uncertainty, input delays, output delays, driving cells, load capacitance, operating conditions. [Constraint File](https://github.com/tusharc01/Digilock/blob/main/logic_synthesis/input/lock_const.sdc)
 
-__6. Gate Level Simulation (GLS):__ It is the verification step where we simulated the synthesized netlist (with real gates and delays) using the same testbench to confirm correctness before physical design in Cadence Incisive/NC-Sim.
+__6. Gate Level Simulation (GLS):__ It is the verification step where we simulated the synthesized netlist (with real gates and delays) using the same testbench to confirm correctness before physical design in Cadence Incisive/NC-Sim. *Done.* 
    - After synthesis, RTL code is converted into a gate-level netlist (mapped to standard cells from library file).
    - GLS verifies that the functional behavior of the synthesized netlist still matches your RTL design under real gate delays and timing constraints.
    - It ensures that no issues were introduced by synthesis (like glitches, incorrect optimizations, or library mismatches).
@@ -56,7 +56,7 @@ __7. Formal Verification (LEC):__ Verify functional equivalence between the orig
    - Resolved any identified issues (e.g., non-equivalences or unmapped elements) to confirm 100% logical match, including adjusting synthesis constraints or directives to prevent unwanted optimizations (e.g., retiming or logic restructuring) that alter the netlist structure, and fixing RTL issues like uninitialized variables or ambiguous logic that synthesis interprets differently.  
    - **Note on LEC Process**: In the ASIC flow, LEC is typically automated via a specific .do file (a TCL-based script in Conformal) containing commands like `read design`, `set system mode lec`, `map key points`, `add compared points`, and `report statistics` to load designs, perform mapping/comparison, and generate reports; this ensures repeatable verification without manual GUI steps, often run in batch mode for efficiency.
 
-__8. Design for Testability (DFT):__ Scan chain insertion replaced DFFs with scan DFFs and connects them serially to allow controllability and observability for testing fabricated chips.
+__8. Design for Testability (DFT):__ Scan chain insertion replaced DFFs with scan DFFs and connects them serially to allow controllability and observability for testing fabricated chips. *Done.* 
 
 __*. Power Analysis:__ Estimate internal, dynamic (switching), and static (leakage) power consumption based on the synthesized netlist and switching activity, using Cadence Genus for early-stage power estimation (rough power estimations done at the RTL or architectural level to guide design decisions related to power consumption), quick estimation during or right after synthesis and Synopsys Design Vision for post-synthesis analysis (initial power analysis on the synthesized netlist using library data and estimated switching activity or VCD/SAIF files) as a standalone step. *Done.*  
    - Generated reports directly in Genus via commands like `report_power` without always needing external files, using internal estimators for the following power types:  
