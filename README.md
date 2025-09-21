@@ -46,7 +46,7 @@ __5. Logic Synthesis:__ Convert RTL to gate-level netlist using Cadence Genus to
    - Constraints include: time unit definition, clock creation, clock uncertainty, input delays, output delays, driving cells, load capacitance, operating conditions. [Constraint File](https://github.com/tusharc01/Digilock/blob/main/logic_synthesis/input/lock_const.sdc)
 
 __6. Gate Level Simulation (GLS):__ It is the verification step where we simulated the synthesized netlist (with real gates and delays) using the same testbench to confirm correctness before physical design in Cadence Incisive/NC-Sim.
-   - After synthesis, your RTL code is converted into a gate-level netlist (mapped to standard cells from your tsl18fs120_scl_ff.lib).
+   - After synthesis, your RTL code is converted into a gate-level netlist (mapped to standard cells from library file).
    - GLS verifies that the functional behavior of the synthesized netlist still matches your RTL design under real gate delays and timing constraints.
    - It ensures that no issues were introduced by synthesis (like glitches, incorrect optimizations, or library mismatches).
 
